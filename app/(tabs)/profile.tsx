@@ -230,17 +230,8 @@ export default function SettingsScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Animated Background Gradient */}
-      <LinearGradient
-        colors={['#1a0a2e', '#0a1628', '#000000']}
-        locations={[0, 0.4, 1]}
-        style={StyleSheet.absoluteFill}
-      />
-      
-      {/* Decorative Blurs */}
-      <View style={styles.decorativeCircle1} />
-      <View style={styles.decorativeCircle2} />
-      <View style={styles.decorativeCircle3} />
+      {/* Full Black Background */}
+      <View style={StyleSheet.absoluteFill} />
       
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         <ScrollView 
@@ -528,33 +519,7 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
   },
-  decorativeCircle1: {
-    position: 'absolute',
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    backgroundColor: 'rgba(191, 90, 242, 0.15)',
-    top: -100,
-    right: -100,
-  },
-  decorativeCircle2: {
-    position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(0, 122, 255, 0.1)',
-    top: 200,
-    left: -80,
-  },
-  decorativeCircle3: {
-    position: 'absolute',
-    width: 250,
-    height: 250,
-    borderRadius: 125,
-    backgroundColor: 'rgba(48, 209, 88, 0.08)',
-    bottom: 100,
-    right: -50,
-  },
+
   header: {
     paddingTop: 8,
     paddingBottom: 24,
@@ -715,7 +680,7 @@ const styles = StyleSheet.create({
   },
   versionContainer: {
     alignItems: 'center',
-    paddingVertical: 20,
+    paddingVertical: 8,
   },
   versionText: {
     fontSize: 13,

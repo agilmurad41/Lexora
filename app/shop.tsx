@@ -30,17 +30,8 @@ export default function ShopScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Vibrant Gradient Background */}
-      <LinearGradient
-        colors={['#1a0a28', '#0a1028', '#000000']}
-        locations={[0, 0.4, 1]}
-        style={StyleSheet.absoluteFill}
-      />
-      
-      {/* Decorative Orbs */}
-      <View style={styles.decorativeOrb1} />
-      <View style={styles.decorativeOrb2} />
-      <View style={styles.decorativeOrb3} />
+      {/* Full Black Background */}
+      <View style={StyleSheet.absoluteFill} />
       
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         {/* Header */}
@@ -216,33 +207,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
   },
-  decorativeOrb1: {
-    position: 'absolute',
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    backgroundColor: 'rgba(191, 90, 242, 0.15)',
-    top: -100,
-    right: -100,
-  },
-  decorativeOrb2: {
-    position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(0, 122, 255, 0.1)',
-    top: 350,
-    left: -80,
-  },
-  decorativeOrb3: {
-    position: 'absolute',
-    width: 150,
-    height: 150,
-    borderRadius: 75,
-    backgroundColor: 'rgba(48, 209, 88, 0.1)',
-    bottom: 200,
-    right: -50,
-  },
+
   header: {
     flexDirection: 'row',
     alignItems: 'center',

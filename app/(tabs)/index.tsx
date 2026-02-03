@@ -56,17 +56,8 @@ export default function HomeScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Vibrant Gradient Background */}
-      <LinearGradient
-        colors={['#1a0a2e', '#0f1a2e', '#0a1e1a', '#000000']}
-        locations={[0, 0.3, 0.6, 1]}
-        style={StyleSheet.absoluteFill}
-      />
-      
-      {/* Decorative Gradient Orbs */}
-      <Animated.View style={[styles.glowOrb1, glowStyle]} />
-      <Animated.View style={[styles.glowOrb2, glowStyle]} />
-      <Animated.View style={[styles.glowOrb3, glowStyle]} />
+      {/* Full Black Background */}
+      <View style={StyleSheet.absoluteFill} />
       
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         <ScrollView 
@@ -238,18 +229,7 @@ export default function HomeScreen() {
             </AnimatedPressable>
           </View>
 
-          {/* Bottom Icons */}
-          <View style={styles.bottomIcons}>
-            <Pressable style={styles.bottomIcon}>
-              <Ionicons name="settings-outline" size={24} color={theme.textSecondary} />
-            </Pressable>
-            <Pressable style={styles.bottomIcon}>
-              <Ionicons name="help-circle-outline" size={24} color={theme.textSecondary} />
-            </Pressable>
-            <Pressable style={styles.bottomIcon}>
-              <Ionicons name="share-social-outline" size={24} color={theme.textSecondary} />
-            </Pressable>
-          </View>
+
         </ScrollView>
       </SafeAreaView>
     </View>
@@ -267,33 +247,7 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
   },
-  glowOrb1: {
-    position: 'absolute',
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    backgroundColor: 'rgba(191, 90, 242, 0.2)',
-    top: -80,
-    right: -80,
-  },
-  glowOrb2: {
-    position: 'absolute',
-    width: 250,
-    height: 250,
-    borderRadius: 125,
-    backgroundColor: 'rgba(0, 122, 255, 0.15)',
-    top: 300,
-    left: -100,
-  },
-  glowOrb3: {
-    position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(48, 209, 88, 0.12)',
-    bottom: 150,
-    right: -60,
-  },
+
   header: {
     flexDirection: 'row',
     justifyContent: 'space-between',
@@ -518,19 +472,5 @@ const styles = StyleSheet.create({
     color: '#FFF',
     letterSpacing: 3,
   },
-  bottomIcons: {
-    flexDirection: 'row',
-    justifyContent: 'center',
-    gap: 24,
-  },
-  bottomIcon: {
-    width: 48,
-    height: 48,
-    borderRadius: 24,
-    backgroundColor: theme.surface,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    borderColor: theme.glassBorder,
-  },
+
 });

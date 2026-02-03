@@ -136,16 +136,8 @@ export default function ChallengesScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Vibrant Background */}
-      <LinearGradient
-        colors={['#0a1f1a', '#0a1a28', '#000000']}
-        locations={[0, 0.4, 1]}
-        style={StyleSheet.absoluteFill}
-      />
-      
-      {/* Decorative Orbs */}
-      <View style={styles.decorativeOrb1} />
-      <View style={styles.decorativeOrb2} />
+      {/* Full Black Background */}
+      <View style={StyleSheet.absoluteFill} />
       
       <SafeAreaView edges={['top']} style={styles.safeArea}>
         <ScrollView 
@@ -365,24 +357,7 @@ const styles = StyleSheet.create({
   content: {
     paddingHorizontal: 20,
   },
-  decorativeOrb1: {
-    position: 'absolute',
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    backgroundColor: 'rgba(48, 209, 88, 0.12)',
-    top: -50,
-    right: -100,
-  },
-  decorativeOrb2: {
-    position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(100, 210, 255, 0.1)',
-    bottom: 200,
-    left: -80,
-  },
+
   header: {
     flexDirection: 'row',
     alignItems: 'center',

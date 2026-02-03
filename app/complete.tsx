@@ -84,15 +84,8 @@ export default function CompleteScreen() {
 
   return (
     <View style={styles.container}>
-      {/* Vibrant Background */}
-      <LinearGradient
-        colors={['#1a1008', '#0f0a05', '#000000']}
-        style={StyleSheet.absoluteFill}
-      />
-      
-      {/* Decorative Orbs */}
-      <View style={styles.decorativeOrb1} />
-      <View style={styles.decorativeOrb2} />
+      {/* Full Black Background */}
+      <View style={StyleSheet.absoluteFill} />
       
       <SafeAreaView edges={['top', 'bottom']} style={styles.safeArea}>
         {/* Header */}
@@ -261,24 +254,7 @@ const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
   },
-  decorativeOrb1: {
-    position: 'absolute',
-    width: 300,
-    height: 300,
-    borderRadius: 150,
-    backgroundColor: 'rgba(255, 214, 10, 0.1)',
-    top: -80,
-    right: -100,
-  },
-  decorativeOrb2: {
-    position: 'absolute',
-    width: 200,
-    height: 200,
-    borderRadius: 100,
-    backgroundColor: 'rgba(255, 159, 10, 0.08)',
-    bottom: 150,
-    left: -80,
-  },
+
   header: {
     flexDirection: 'row',
     alignItems: 'center',
